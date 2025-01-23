@@ -1,0 +1,24 @@
+# main.tf
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 4.16.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+  subscription_id = "bf6f3448-47b0-4614-82d2-edabccde85c4"
+}
+
+resource "azurerm_resource_group" "rg" {
+  name     = "[name_of_the_resource_group]"
+  location = "West Europe"
+  tags = {
+    environment = "[enviroment_of_the_resource_group]"
+    source = "[source_of_the_resource_group]"
+    owner = "[owner_of_the_resource_group]"
+  }
+}
