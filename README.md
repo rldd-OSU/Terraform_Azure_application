@@ -104,6 +104,3 @@ Contributions welcome! Please create an issue before submitting PRs.
 
 ## 📄 License
 MIT License - see [LICENSE](LICENSE) for details
-
-## 📧 Contact
-For support contact: [your.email@example.com](mailto:your.email@example.com)
